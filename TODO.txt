@@ -1,0 +1,57 @@
+- FANTASIA - choppare le voci di carla per evitare rientri di luna dragonieri. Abbasserei anche leggermente i cori per consentire alla voce principale di emergere. rimuovere artefatto a 0.50 (traccia SFX2). rimuovere voce originale che emerge forse dai chop vocali. Controllare la traccia SFX9 se da fastidio in qualche punto
+
+
+- C'E' TUTTO UN MONDO INTORNO, divario volume fra intro e strofa troppo elevato (1:15 max). Mettere in maggiore evidenza la melodia degli archi se possibile al bridge 2:25 
+
+
+
+
+- ELETTROCHCOC - rimuovere artefatti di farfisa (lo suono io). Rimuovere artefatto 1:22 (sembra una nota da organo basso della traccia originale). alzerei leggermente di più l'arpeggiatore in background durante il ritornello. alzare leggermente controcanto a 2:52 del synth (nome traccia pluck3). forse anche qualche transiente negli arpeggi finali
+
+
+
+
+- TI SENTO 1:22 il boom di cambio strofa lo renderei più marcato leggermente. é possibile rendere i celli da 1:22 più simili nella texture sonora di quelli dell'intro?
+
+
+
+
+
+STASERA CHE SERA
+
+2:27 la linea di viole e violini si perde ad un tratto, vorrei rifinirla e renderla udibile. Si sentono solo le viole, magari possiamo usare i violini per rinforzare.
+
+3:31 aumenterei il volume del run degli archi
+
+#sostituzione traccia in caso posso riesportarla
+
+la traccia original strings estratto contiene qualche colpo di charlie da 2:58 a 3:06. Purtroppo mi son scordato di eliminarle.
+
+3:42 nella traccia original strings estratto metterei una rampa di volume durante l'attacco dei brass e la farei durare 5 secondi in fadein.
+
+
+
+
+
+questa nostra grande storia d'amore
+
+in alcuni punti l'arpeggiatore è un po' troppo saturo
+
+
+
+
+
+SOLO TU:
+chitarra la renderei meno croccante e più rotonda
+
+
+
+
+DEDICATO A TE:
+escludere la traccia GTR 1
+
+
+
+
+brivido caldo
+sostituire la traccia GTR 5

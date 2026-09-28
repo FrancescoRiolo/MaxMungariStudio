@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Privacy Policy — Max Mungari Studio</title>
+  <meta name="description" content="Informativa Cookie e Privacy di Max Mungari Studio. Trattamento dei dati personali e utilizzo dei cookie." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://maxmungaristudio.com/privacy.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy — Max Mungari Studio" />
+  <meta property="og:description" content="Informativa Cookie e Privacy di Max Mungari Studio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maxmungaristudio.com/privacy.html" />
+  <meta property="og:image" content="https://maxmungaristudio.com/newassets/og-image.jpg" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="Max Mungari Studio" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="newassets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="newassets/favicon.png" />
+  <link rel="apple-touch-icon" href="newassets/favicon.png" />
+
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* ── Privacy page specifica ── */
+    #privacy-hero {
+      background: var(--studio-black);
+      padding-top: calc(var(--nav-h) + 2.5rem);
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    @media (min-width: 768px) {
+      #privacy-hero {
+        padding-top: calc(var(--nav-h) + 3rem);
+        padding-bottom: 3rem;
+      }
+    }
+    .privacy-eyebrow {
+      font-family: var(--font-ui);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 1rem;
+    }
+    .privacy-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 400;
+      line-height: 1;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+    .privacy-title em {
+      font-style: italic;
+      color: var(--orange);
+    }
+    #privacy-content {
+      background: var(--off-white);
+      padding-block: clamp(2rem, 4vw, 3.5rem);
+    }
+    .privacy-body {
+      max-width: 100%;
+      color: var(--text-body);
+    }
+    .privacy-body h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 400;
+      text-transform: uppercase;
+      color: var(--studio-black);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--orange);
+    }
+    .privacy-body p {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: var(--text-body);
+      margin-bottom: 1.25rem;
+    }
+    .privacy-body strong {
+      color: var(--studio-black);
+      font-weight: 600;
+    }
+    .privacy-body a {
+      color: var(--orange);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .privacy-body a:hover { opacity: 0.75; }
+    .privacy-titolare {
+      background: var(--light-surface);
+      border-left: 3px solid var(--orange);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 4px 4px 0;
+    }
+    .privacy-titolare p { margin: 0; font-size: 0.9rem; line-height: 1.7; }
+    .privacy-last-update {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(0,0,0,0.1);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+    .privacy-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-ui);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-top: 2.5rem;
+      transition: gap var(--dur-fast);
+    }
+    .privacy-back:hover { gap: 0.8rem; }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==============================
+       NAVBAR
+  ============================== -->
+  <nav id="navbar" role="navigation" aria-label="Navigazione principale">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Max Mungari Studio — torna in cima">
+        <div class="logo-flip-wrap">
+          <div class="logo-flip-inner">
+            <img src="newassets/logoVec1.svg" alt="Max Mungari Studio" class="logo-front"  />
+            <img src="newassets/logoVec2.svg" alt="" class="logo-back" aria-hidden="true"  />
+          </div>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#bio">Max Mungari</a></li>
+        <li><a href="index.html#studio">Studio</a></li>
+        <li><a href="index.html#lavori">Lavori</a></li>
+        <li><a href="index.html#contatti">Servizi</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="index.html#contatti" class="nav-cta">Contattami</a></li>
+        <li class="lang-switch"><span class="lang-active">ITA</span><span class="lang-sep">/</span><a href="en/privacy.html" class="lang-other">ENG</a></li>
+      </ul>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-mobile" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Menu di navigazione">
+    <a href="index.html#bio"      onclick="closeMobile()">Max Mungari</a>
+    <a href="index.html#studio"   onclick="closeMobile()">Studio</a>
+    <a href="index.html#lavori"   onclick="closeMobile()">Lavori</a>
+    <a href="index.html#contatti" onclick="closeMobile()">Servizi</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="index.html#contatti" onclick="closeMobile()">Contattami</a>
+    <div class="lang-switch"><span class="lang-active">ITA</span><span class="lang-sep">/</span><a href="en/privacy.html" class="lang-other">ENG</a></div>
+  </div>
+
+  <!-- ==============================
+       HERO PRIVACY
+  ============================== -->
+  <section id="privacy-hero">
+    <div class="container">
+      <p class="privacy-eyebrow">Informativa</p>
+      <h1 class="privacy-title">Cookie &amp; <em>Privacy.</em></h1>
+    </div>
+  </section>
+
+  <!-- ==============================
+       CONTENUTO PRIVACY
+  ============================== -->
+  <section id="privacy-content">
+    <div class="container">
+      <div class="privacy-body">
+
+        <h2>1. Titolare del Trattamento</h2>
+
+        <div class="privacy-titolare">
+          <p>
+            <strong>Massimiliano Mungari</strong><br />
+            Via Lina Merlin n. 1 — 88900 Crotone (KR) Italia<br />
+            Cod. Fisc. MNGMSM76C26D122H<br />
+            Email: <a href="mailto:info@maxmungaristudio.com">info@maxmungaristudio.com</a>
+          </p>
+        </div>
+
+        <h2>2. Dati Raccolti e Finalità</h2>
+
+        <p>Questo sito raccoglie esclusivamente i dati personali (nome, cognome, telefono, indirizzo email) che l'utente fornisce volontariamente contattando il titolare tramite i recapiti indicati. Tali dati vengono trattati al solo fine di rispondere alle richieste ricevute.</p>
+
+        <p><strong>Base giuridica del trattamento:</strong> esecuzione di misure precontrattuali su richiesta dell'interessato (art. 6, par. 1, lett. b GDPR) e legittimo interesse del titolare a rispondere alle comunicazioni ricevute (art. 6, par. 1, lett. f GDPR).</p>
+
+        <p><strong>Periodo di conservazione:</strong> i dati sono conservati per il tempo strettamente necessario a gestire la richiesta e, salvo obblighi di legge, non oltre 24 mesi dall'ultimo contatto.</p>
+
+        <h2>3. Cookie e Dati di Navigazione</h2>
+
+        <p>Questo sito non utilizza cookie di profilazione né sistemi di analisi del traffico. L'unico dato tecnico memorizzato localmente è un valore in <strong>sessionStorage</strong> (non un cookie) utilizzato per gestire la schermata di benvenuto: viene cancellato automaticamente alla chiusura del browser ed è esente da consenso ai sensi della normativa vigente.</p>
+
+        <p><strong>Vimeo:</strong> il sito incorpora un video tramite il player Vimeo con la modalità <em>Do Not Track</em> attiva (<code>dnt=1</code>). In questa modalità Vimeo non imposta cookie di tracciamento né raccoglie dati dell'utente a fini pubblicitari. Per maggiori informazioni: <a href="https://vimeo.com/privacy" target="_blank" rel="noopener">vimeo.com/privacy</a>.</p>
+
+        <p><strong>Google Fonts:</strong> i font tipografici sono ospitati direttamente sui server del sito. Nessun dato viene trasmesso a Google LLC per il caricamento dei caratteri.</p>
+
+        <p><strong>Google Maps:</strong> il sito include una mappa interattiva fornita da Google LLC (USA). La mappa <em>non viene caricata automaticamente</em>: viene mostrato un pannello di consenso e l'iframe di Google Maps è attivato solo su esplicita azione dell'utente ("Accetta e carica la mappa"). Il consenso è memorizzato nel browser (<code>localStorage</code>) e può essere revocato cancellando i dati di navigazione. In caso di mancato consenso è possibile aprire la posizione direttamente su Google Maps senza che il sito trasmetta alcun dato. Per maggiori informazioni: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
+
+        <p>Il sito contiene link a canali social (Instagram, Facebook, YouTube). Una volta cliccati, l'utente accede a piattaforme di terze parti non controllabili dal titolare, che non potrà essere ritenuto responsabile del trattamento dati effettuato da tali soggetti. Si invita a consultare le rispettive informative.</p>
+
+        <h2>4. Diritti dell'Interessato</h2>
+
+        <p>In qualità di interessato, ai sensi degli artt. 15–22 del Regolamento UE 2016/679 (GDPR), hai il diritto di:</p>
+        <p>
+          <strong>Accesso</strong> — ottenere conferma del trattamento e copia dei dati;<br />
+          <strong>Rettifica</strong> — correggere dati inesatti o incompleti;<br />
+          <strong>Cancellazione</strong> — ottenere la rimozione dei dati ("diritto all'oblio");<br />
+          <strong>Limitazione</strong> — richiedere la sospensione del trattamento;<br />
+          <strong>Portabilità</strong> — ricevere i dati in formato strutturato e leggibile;<br />
+          <strong>Opposizione</strong> — opporti al trattamento basato su legittimo interesse.
+        </p>
+        <p>Per esercitare i tuoi diritti scrivi a: <a href="mailto:info@maxmungaristudio.com">info@maxmungaristudio.com</a></p>
+
+        <h2>5. Reclamo all'Autorità di Controllo</h2>
+
+        <p>Hai il diritto di proporre reclamo al <strong>Garante per la Protezione dei Dati Personali</strong> (www.garanteprivacy.it) qualora ritieni che il trattamento dei tuoi dati violi il GDPR.</p>
+
+        <h2>6. Aggiornamenti</h2>
+
+        <p>La presente informativa può essere aggiornata in qualunque momento. Si invita a consultare periodicamente questa pagina, facendo riferimento alla data di ultima modifica indicata di seguito.</p>
+
+        <p class="privacy-last-update">Ultima modifica: <em>9 giugno 2026</em></p>
+
+        <a href="index.html" class="privacy-back">← Torna al sito</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer class="footer-light">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="footer-logo" aria-label="Torna al sito">
+          <img src="newassets/logoVec1.svg" alt="Max Mungari Studio" loading="lazy" />
+        </a>
+        <p class="footer-meta">
+          <span class="footer-credit">Webdesign | <a href="https://francescoriolo.com" target="_blank" rel="noopener">francescoriolo.com</a></span>
+          <span class="footer-sep" aria-hidden="true">—</span>
+          <span class="footer-copy">&copy; 2025 Max Mungari Studio</span>
+          <span class="footer-sep" aria-hidden="true">—</span>
+          <a href="privacy.html" class="footer-privacy">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Navbar scroll ── */
+    const navbar = document.getElementById('navbar');
+    const tickNav = () => navbar.classList.toggle('scrolled', window.scrollY > 40);
+    window.addEventListener('scroll', tickNav, { passive: true });
+    tickNav();
+
+    /* ── Hamburger ── */
+    const hamburger  = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    let menuOpen = false;
+    let _lockScrollY = 0;
+
+    function lockScroll() {
+      _lockScrollY = window.scrollY;
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.top = '-' + _lockScrollY + 'px';
+      document.body.style.width = '100%';
+    }
+    function unlockScroll() {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      window.scrollTo(0, _lockScrollY);
+    }
+
+    hamburger.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      hamburger.classList.toggle('open', menuOpen);
+      hamburger.setAttribute('aria-expanded', menuOpen);
+      mobileMenu.classList.toggle('open', menuOpen);
+      mobileMenu.setAttribute('aria-hidden', !menuOpen);
+      navbar.classList.toggle('menu-open', menuOpen);
+      if (menuOpen) lockScroll(); else unlockScroll();
+    });
+    function closeMobile() {
+      menuOpen = false;
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+      mobileMenu.classList.remove('open');
+      mobileMenu.setAttribute('aria-hidden', true);
+      navbar.classList.remove('menu-open');
+      unlockScroll();
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && menuOpen) closeMobile(); });
+  </script>
+
+</body>
+</html>
