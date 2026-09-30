@@ -167,7 +167,7 @@
   <!-- Audio ABC player (Mixing/Mastering/Produzioni) —
        tracks caricate dinamicamente da /music-assets/tracks.json -->
 
-  <link rel="stylesheet" href="style.min.css?v=20260622" />
+  <link rel="stylesheet" href="style.min.css?v=20260928d" />
 
 
   <!-- Preload immagine hero principale -->
@@ -188,6 +188,28 @@
       </div>
     </div>
     <button id="intro-enter-btn" type="button">Entra nel sito</button>
+  </div>
+
+  <!-- ==============================
+       MODALE EXPRESS MASTERING
+       (si apre dopo l'intro, una volta per sessione)
+  ============================== -->
+  <div id="express-modal" class="xm" hidden role="dialog" aria-modal="true" aria-labelledby="xm-title">
+    <div class="xm-backdrop" data-xm-close></div>
+    <div class="xm-card">
+      <button type="button" class="xm-close" data-xm-close aria-label="Chiudi">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M3 3l12 12M15 3L3 15"/></svg>
+      </button>
+      <h2 id="xm-title" class="xm-logo"><img src="newassets/express-logo.webp" alt="Express Mastering" width="1120" height="439" decoding="async" /></h2>
+      <p class="xm-price">Prezzo assolutamente concorrenziale</p>
+      <p class="xm-time">In 1 ora hai il tuo brano masterizzato</p>
+      <p class="xm-hook">Suono, dinamica e dimensione da paura</p>
+      <div class="xm-rule"><span class="xm-badge">Mastering analogico</span></div>
+      <a class="xm-cta" href="https://wa.me/393337802308?text=Ciao%20Max%2C%20vorrei%20informazioni%20sul%20servizio%20Express%20Mastering" target="_blank" rel="noopener">
+        <svg width="34" height="20" viewBox="0 0 34 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 10h29M23 2l8 8-8 8"/></svg>
+        <span>Scopri il servizio</span>
+      </a>
+    </div>
   </div>
 
   <!-- ==============================
@@ -333,27 +355,21 @@
   </section>
 
   <!-- ==============================
-       STATEMENT BAR
+       STRIP EXPRESS MASTERING
   ============================== -->
-  <div class="statement-bar" aria-label="Cifre chiave">
+  <div class="xs-strip" id="express-strip" aria-label="Express Mastering">
     <div class="container">
-      <div class="statement-bar-inner">
-        <div class="statement-item reveal">
-          <div class="statement-number">25+</div>
-          <div class="statement-label">Anni di<br />Esperienza</div>
+      <div class="xs-inner reveal">
+        <img class="xs-logo" src="newassets/express-logo-light.webp" alt="Express Mastering" width="1120" height="439" loading="lazy" decoding="async" />
+        <div class="xs-copy">
+          <p class="xs-over">Prezzo assolutamente concorrenziale</p>
+          <p class="xs-main">In 1 ora hai il tuo brano masterizzato</p>
+          <p class="xs-sub">Suono, dinamica e dimensione da paura<br />Mastering analogico</p>
         </div>
-        <div class="statement-item reveal d1">
-          <div class="statement-number">500+</div>
-          <div class="statement-label">Brani<br />Prodotti</div>
-        </div>
-        <div class="statement-item reveal d2">
-          <div class="statement-number">3</div>
-          <div class="statement-label">Specializzazioni<br />Core</div>
-        </div>
-        <div class="statement-item reveal d3">
-          <div class="statement-number">∞</div>
-          <div class="statement-label">Passione<br />per il Suono</div>
-        </div>
+        <a class="xs-cta" href="https://wa.me/393337802308?text=Ciao%20Max%2C%20vorrei%20informazioni%20sul%20servizio%20Express%20Mastering" target="_blank" rel="noopener">
+          <svg width="30" height="18" viewBox="0 0 34 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 10h29M23 2l8 8-8 8"/></svg>
+          <span>Scrivimi su WhatsApp</span>
+        </a>
       </div>
     </div>
   </div>
@@ -940,7 +956,7 @@
     </div>
   </footer>
 
-  <script src="main.min.js?v=20260622" defer></script>
+  <script src="main.min.js?v=20260928d" defer></script>
 
   <script>
   /* ── Google Maps consent gate ── */
@@ -973,7 +989,7 @@
   <span id="wa-btn-label">Scrivimi su WhatsApp</span>
 </a>
 <script src="music-assets/tracks.js"></script>
-<script src="abc-player.min.js?v=20260622" defer></script>
+<script src="abc-player.min.js?v=20260928d" defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var all = window.ABC_TRACKS || [];

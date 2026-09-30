@@ -928,3 +928,76 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     start();
   }
 })();
+
+
+/* ── Modale Express Mastering ──
+   Si apre dopo l'intro (una volta per sessione). Chiusura: X, click fuori, Esc.
+   Il pulsante porta a WhatsApp (link nell'HTML). */
+(function() {
+  var modal = document.getElementById('express-modal');
+  if (!modal) return;
+
+  var KEY = 'expressModalSeen';
+  try { if (sessionStorage.getItem(KEY)) return; } catch (e) {}
+
+  var closeBtn = modal.querySelector('.xm-close');
+  var cta      = modal.querySelector('.xm-cta');
+  var prevOverflow = '';
+  var lastFocus = null;
+  var isOpen = false;
+
+  function open() {
+    if (isOpen) return;
+    isOpen = true;
+    try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
+    lastFocus = document.activeElement;
+    prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    modal.hidden = false;
+    modal.offsetHeight; /* forza reflow per far partire la transizione */
+    modal.classList.add('is-open');
+    closeBtn.focus({ preventScroll: true });
+    document.addEventListener('keydown', onKey);
+  }
+
+  function close() {
+    if (!isOpen) return;
+    isOpen = false;
+    modal.classList.remove('is-open');
+    document.removeEventListener('keydown', onKey);
+    setTimeout(function() {
+      modal.hidden = true;
+      document.body.style.overflow = prevOverflow;
+      if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+    }, 360);
+  }
+
+  function onKey(e) {
+    if (e.key === 'Escape') { close(); return; }
+    if (e.key === 'Tab') { /* focus trap tra X e pulsante */
+      var first = closeBtn, last = cta;
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  }
+
+  modal.addEventListener('click', function(e) {
+    if (e.target.closest('[data-xm-close]')) close();
+  });
+  cta.addEventListener('click', function() { setTimeout(close, 200); });
+
+  /* Trigger: appena l'intro sparisce dal DOM (o subito se già superata) */
+  var intro = document.getElementById('intro-screen');
+  var introActive = intro && intro.style.display !== 'none';
+  if (introActive) {
+    var mo = new MutationObserver(function() {
+      if (!document.body.contains(intro)) {
+        mo.disconnect();
+        setTimeout(open, 250);
+      }
+    });
+    mo.observe(document.body, { childList: true });
+  } else {
+    setTimeout(open, 600);
+  }
+})();
