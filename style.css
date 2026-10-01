@@ -3876,7 +3876,7 @@ br.mobile-only { display: none; }
   overflow: hidden;
   background: var(--studio-black);
   border-top: 1px solid #ffd180;
-  border-bottom: 1px solid #ffd180;
+  border-bottom: 1px solid #f4f4f4;
 }
 .xs-ribbon {
   position: absolute;
